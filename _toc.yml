@@ -3,7 +3,18 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  - caption: Database Fundamentals
+    chapters:
+    - file: DatabaseFundamentals/introduction_to_databses.md # Module 1 Introduction to databases
+    - file: # Module 2 ER/EER modelling and transformation
+    - file: # Module 3
+    - file: # Module 4
+    - file: # Module 5
+    - file: # Module 6
+
+
+# chapters:
+# - file: markdown
+# - file: notebooks
+# - file: markdown-notebooks
