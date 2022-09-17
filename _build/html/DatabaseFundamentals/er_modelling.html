@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1. Introduction to databases &#8212; Data Science Study Notes</title>
+    <title>2. ER Modelling &#8212; Data Science Study Notes</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2. ER Modelling" href="er_modelling.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="../intro.html" />
+    <link rel="prev" title="1. Introduction to databases" href="introduction_to_databases.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -119,13 +118,13 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction_to_databases.html">
    1. Introduction to databases
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="er_modelling.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    2. ER Modelling
   </a>
  </li>
@@ -219,7 +218,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://alanraymond.github.io/data_science/issues/new?title=Issue%20on%20page%20%2FDatabaseFundamentals/introduction_to_databases.html&body=Your%20issue%20content%20here."
+        <a href="https://alanraymond.github.io/data_science/issues/new?title=Issue%20on%20page%20%2FDatabaseFundamentals/er_modelling.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -247,7 +246,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/DatabaseFundamentals/introduction_to_databases.md"
+        <a href="../_sources/DatabaseFundamentals/er_modelling.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -306,32 +305,27 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#databasing-for-a-cause">
-   1.1. Databasing for a cause
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   2. ER Modelling
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#benefits-of-a-database-approach">
-   1.2. Benefits of a database approach
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#database-technologies">
-   1.3. Database technologies
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#relational-database-models">
-   1.4. Relational database models
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#definitions">
-     1.4.1. Definitions
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-to-draw-an-er-diagram">
+     2.1. steps to draw an ER diagram
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-to-design-relational-database-top-down">
+     2.2. steps to design relational database (top-down)
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eer-modelling">
+   3. EER Modelling
+  </a>
  </li>
 </ul>
 
@@ -342,7 +336,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction to databases</h1>
+                <h1>ER Modelling</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -352,32 +346,27 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#databasing-for-a-cause">
-   1.1. Databasing for a cause
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   2. ER Modelling
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#benefits-of-a-database-approach">
-   1.2. Benefits of a database approach
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#database-technologies">
-   1.3. Database technologies
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#relational-database-models">
-   1.4. Relational database models
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#definitions">
-     1.4.1. Definitions
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-to-draw-an-er-diagram">
+     2.1. steps to draw an ER diagram
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-to-design-relational-database-top-down">
+     2.2. steps to design relational database (top-down)
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eer-modelling">
+   3. EER Modelling
+  </a>
  </li>
 </ul>
 
@@ -389,71 +378,90 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-databases">
-<h1><span class="section-number">1. </span>Introduction to databases<a class="headerlink" href="#introduction-to-databases" title="Permalink to this headline">#</a></h1>
-<p>A database is a collection of information that reflects some aspect of a real world system. Like a real world system, the information is meaningful.</p>
-<p>Information has meaning (logical sets of possible values, values have explicit units, and related by real world phenomena).</p>
-<p>WHen analysing a problem, it is useful to work within a defined scope, and so databases will be built for a specific purpose with an implicit scope. When working with a database, it should be understood that there will be inherent limitations to the applications of the data within.</p>
-<p>A database system is a set of tools that enable the user to effectively manage the database.
-To manage a database we need to:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="er-modelling">
+<h1><span class="section-number">2. </span>ER Modelling<a class="headerlink" href="#er-modelling" title="Permalink to this headline">#</a></h1>
+<p>What, and how many, tables do we require for the use case?
+How do we establish the relationships between tables?</p>
+<p>AN entity is represented by a name in a rectangular box. An entity is usually an object or event in the real world, i.e. an employee.
+Each entity has a set of attributes that describe it. Each attribute is represented by an oval. Each attribute has a set of legal values.
+THere are different types of attributes:
+simple/atomic: only one value alllowed
+composite: consisting
+multivalued: denoted by double oval.
+derived: calculated or derived from another attribute i.e. age derived from a date of birth and current date</p>
+<p>Relationships are an association between entities.
+degrees of relationships denote the number of entities participating in a relationship</p>
+<p>cardinality: The number of entity instances in a relationship instance. THere are three times in binary relationships (degree 2): 1:1, 1:N, M:N.
+Types of participation:
+Total - existence is totally dependent on another entity.
+Partial - entity can exist without further context.</p>
+<p>relationships can have attributes. THis only makes sense when the cardinality is M:N. Otherwise, it may make more sense to add this relationship attribute to one of the entities.</p>
+<p>weak entity: entity exists conditionally on the existence of one or more other entities. Primary key is partially or totally derived from the owner entity. Denoted by a double lines rectangular/diamond. Use of a cascade.
+If in doubt, design the entity as a strong entity.</p>
+<section id="steps-to-draw-an-er-diagram">
+<h2><span class="section-number">2.1. </span>steps to draw an ER diagram<a class="headerlink" href="#steps-to-draw-an-er-diagram" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Create the framework: define constraints and create the database;</p></li>
-<li><p>Store/populate the framework with data, and;</p></li>
-<li><p>Extract information (query) to answer targetted questions.</p></li>
+<li><p>Identify entities in the required system and represent them graphically by a rectangle.</p></li>
+<li><p>Search for relationships between the entities and represent them graphically by a diamond.</p></li>
+<li><p>Identify constrants on relationships (all relationships).</p>
+<ul>
+<li><p>for cardinality, use 1, N or M, and (min,max).</p></li>
+<li><p>for participation, total is shown as double line, partial with a single line.</p></li>
 </ul>
-<p>A database is distinguished over a file system in its ability to be queried effectively. Storing data does not provide value if it cannot be accessed.</p>
-<section id="databasing-for-a-cause">
-<h2><span class="section-number">1.1. </span>Databasing for a cause<a class="headerlink" href="#databasing-for-a-cause" title="Permalink to this headline">#</a></h2>
-<p>Different businesses will have different requirements</p>
-<ul class="simple">
-<li><p>A retail business needs to store sales transactional data stored in real-time and fast. A delay in reading/writing could lead to inconsistent information in the database.</p></li>
-<li><p>A database that stores medical information needs to ensure that the privacy of the data is protected. Database management systems provide the ability to set user restrictions.</p></li>
-<li><p>In applications where the amount of</p></li>
+</li>
+<li><p>Identify all attributes and underline primary keys.</p></li>
 </ul>
 </section>
-<section id="benefits-of-a-database-approach">
-<h2><span class="section-number">1.2. </span>Benefits of a database approach<a class="headerlink" href="#benefits-of-a-database-approach" title="Permalink to this headline">#</a></h2>
-<p>Databases make data storage and organisation easy and efficient.</p>
-<p>Helps control data redundancy.</p>
+<section id="steps-to-design-relational-database-top-down">
+<h2><span class="section-number">2.2. </span>steps to design relational database (top-down)<a class="headerlink" href="#steps-to-design-relational-database-top-down" title="Permalink to this headline">#</a></h2>
+<p>Step 1: Regular Entities
+Step 2: Weak Entities
+Step 3: 1-to-1 relationships
+Step 4: 1-to-N relationships
+Foreign key goes in the table with the many relationship - removes ambiguity
+Step 5: N-to-N relationships
+A relation is created for the relationship with keys to join the two tables logically
+Step 6: Multivalued attributes
+For each multivalued attribute, create a new relation and key it to the original entity
+Step 7: N-ary (N&gt;2) relationships
+Similar to Step 5
+Step 8: Final table list</p>
+<p>Example
+<img alt="Real Estate Agency E-R diagram" src="DatabaseFundamentals/..%5Cimages%5Cdatabase_design_realestateagency.png" /></p>
+<p>Step1:
+MAINTENANCE(maintenanceID, date, type, cost)
+OWNER(ownerID, ownerName, ownerAddress)
+PROPERTY(buildingID, address, value)
+ACCOUNT(ACReceiptID, dateofPayment, typeofAccount, amountPaid)
+TENANT(tenantID, firstName, familyName, address, phoneNumber)</p>
+<p>Step2: No weak entities</p>
+<p>Step3: No 1-to-1 relationships</p>
+<p>Step4:
+MAINTENANCE(maintenanceID, date, type, cost, propertyID)
+OWNER(ownerID, ownerName, ownerAddress)
+PROPERTY(buildingID, address, value, ownerID)
+ACCOUNT(ACReceiptID, dateofPayment, typeofAccount, amountPaid, tenantID, propertyID)
+TENANT(tenantID, firstName, familyName, address, phoneNumber)</p>
+<p>Step5:
+MAINTENANCE(maintenanceID, date, type, cost, propertyID)
+OWNER(ownerID, ownerName, ownerAddress)
+PROPERTY(buildingID, address, value, ownerID)
+ACCOUNT(ACReceiptID, dateofPayment, typeofAccount, amountPaid, tenantID, propertyID)
+TENANT(tenantID, firstName, familyName, address, phoneNumber)
+RENT(tenantID, propertyID)</p>
+<p>Step6: No mulitvalued attributes</p>
+<p>Step7: No N-ary relationships</p>
+<p>Step8:
+MAINTENANCE(maintenanceID, date, type, cost, propertyID)
+OWNER(ownerID, ownerName, ownerAddress)
+PROPERTY(buildingID, address, value, ownerID)
+ACCOUNT(ACReceiptID, dateofPayment, typeofAccount, amountPaid, tenantID, propertyID)
+TENANT(tenantID, firstName, familyName, address, phoneNumber)
+RENT(tenantID, propertyID)</p>
 </section>
-<section id="database-technologies">
-<h2><span class="section-number">1.3. </span>Database technologies<a class="headerlink" href="#database-technologies" title="Permalink to this headline">#</a></h2>
 </section>
-<section id="relational-database-models">
-<h2><span class="section-number">1.4. </span>Relational database models<a class="headerlink" href="#relational-database-models" title="Permalink to this headline">#</a></h2>
-<section id="definitions">
-<h3><span class="section-number">1.4.1. </span>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h3>
-<p>Relation:
-Relationship:
-Primary Key: Most efficient set of attributes that can uniquely identify a tuple (entry) in a relation. Denoted by underline.
-Foreign Key: An attribute’s value for a relation. Foreign keys establish a relationship between two or more relations (tables).
-Entity Integrity Constraint: For an entity to exist, it must be identifiable (primary key is not NULL) and unique (no duplicate of primary key).
-Referential Integrity Constraint: There must be consistency between tuples of two relations joined by a relationship (foreign key must be valid).</p>
-<p>THere are three strategies to preserve referential integrity as relations are ammended.
-RESTRICTED: If loss of integrity will occur if table is ammended, the ammendment is rejected.
-CASCADE: Ammending a relation will also ammend all relations referenced through relationships (i.e. deleting an entry in one table will deleted entries in another if a foreign key was used).
-NULLIFIES: Foreign key is set to NULL in all matching references, and then the target is then updated.</p>
-<p><img alt="Data Integrity Task" src="../_images/data_integrity_task.png" /></p>
-<ol class="simple">
-<li><p>What entity integrity constraints exist in the data?</p></li>
-</ol>
-<ul class="simple">
-<li><p>Student relation, George Washington does not have a ‘Student ID’.</p></li>
-<li><p>Lecturer relation, ‘Lecturer ID’ Q234 is not unique.</p></li>
-<li><p>Student relation, Chen Ying appears twice in the relation, and has two different ‘Student ID’s. This is not a constraint, but it does not preserve data integrity.</p></li>
-</ul>
-<ol class="simple">
-<li><p>What referential integrity constraints exist in the data?</p></li>
-</ol>
-<ul class="simple">
-<li><p>Subject relation, foreign key ‘P534’ in Lecture ID does not exist in the Lecturer relation.</p></li>
-<li><p>Enrolment relation, foreign key ‘CDE-7’ in Student ID does not exist in the Student relation.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Assume the subject BUA5FMA is no longer offered. What will the relation tables look like if the preservation effect is ‘cascade’?</p></li>
-</ol>
-</section>
-</section>
+<section class="tex2jax_ignore mathjax_ignore" id="eer-modelling">
+<h1><span class="section-number">3. </span>EER Modelling<a class="headerlink" href="#eer-modelling" title="Permalink to this headline">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -483,19 +491,12 @@ NULLIFIES: Foreign key is set to NULL in all matching references, and then the t
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="introduction_to_databases.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Welcome to your Jupyter Book</p>
+            <p class="prev-next-title"><span class="section-number">1. </span>Introduction to databases</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="er_modelling.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>ER Modelling</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

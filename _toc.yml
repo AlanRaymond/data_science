@@ -9,7 +9,7 @@ parts:
 - caption: Database Fundamentals
   chapters:
   - file: DatabaseFundamentals/introduction_to_databases.md # Module 1 Introduction to databases
-  # - file: # Module 2 ER/EER modelling and transformation
+  - file: DatabaseFundamentals/er_modelling.md # Module 2 ER/EER modelling and transformation
   # - file: # Module 3
   # - file: # Module 4
   # - file: # Module 5
